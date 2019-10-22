@@ -5,13 +5,23 @@
     <% include partials/header.ejs %>
     <!--Incluir el header-->
     <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
     <title>ExpressBooks</title>
 </head>
 
 <body class="bg-light">
     <!--Archivo copiado de bootstrap 4(https://getbootstrap.com/docs/4.3/components/navbar/)-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="/">ExpressBooks</a>
+        <div class="title">
+            
+            <a class="navbar-brand" href="/">ExpressBooks</a>
+        </div>
+        <style>
+            .title{
+                font-family: 'Raleway';
+                font-size: 20px;
+            }
+        </style>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,8 +47,31 @@
                         <div class="card-header">
                             <%= book.title %> / <%= book.author%>
                         </div>
-                        <img src="<%= book.image %>" class="card-img-top" alt="Imagen del libro">
-                        
+                        <div class="book-image">
+
+                            <img src="<%= book.image %>" class="card-img-top" alt="Imagen del libro">
+                        </div>
+                        <style>
+                            body{
+                                font-family: 'Roboto';
+                            }
+                            .card-header{
+                                cursor: default;
+                                font-size: 18px;
+                            }
+                            .book-image{
+                                cursor: default;
+                            }
+                            .card-body{
+                                
+                                cursor: default;
+                            }
+                            .card-body p{
+                                text-decoration: none;
+                                font-size: 16px;
+                            }
+
+                        </style>
                         <div class="card-body">
                             <p><%= book.description %></p>
                         </div>
@@ -46,6 +79,9 @@
                             <a href="/delete/<%= book.id %>" class="btn btn-danger">
                                 Delete
                             </a>
+                        </div>
+                        <div class="card-footer">
+                           <a href="<%= book.link %>" class="btn btn-primary" target="_blank">Go!</a>
                         </div>
                     </div>
                 </div>

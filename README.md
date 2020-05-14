@@ -1,17 +1,17 @@
 # Express-JSON
-If you want to run the program locally:
-  You have to install the npm dependencies by yourself. You just need to copy this command into your terminal
-  1. Win+R and write cmd
-  2. Copy this command=> npm install express morgan ejs uuid node nodemon
-  3. Write this command=> node src/index.js
-  4. If all were find you can use my Web Software!
+Para correr el software localmente:
+  Instalar las dependencias npm manualmente. Seguir los siguientes pasos:
+  1. Win+R y escribir cmd
+  2. Copiar esta sentencia en el directorio raiz del proyecto=> npm install
+  3. Cuando termine la instalación escribir lo siguiente en la terminal=> node src/index.js
+  4. Si todo a funcionado correctamente podrás utilizar la web dirigiendote a localhost:3000
+  
 
-All users can view and edit your content
+Todos los usuarios que se conecten pueden ver los archivos
 
--Inside the Website-
-  Go to 'New book'
-  Add the information about it
-  Share the link of the page with your friends to partake of your information
+## Dentro de la web
+  1. Ir a la sección 'New book'
+  2. Rellena la información
+  3. Comparte el link de la página con el grupo de personas a las que quieras mostrarle el contenido
 
-//It will be a form to use an internet document(pdf for example) without download it//
 
